@@ -1,0 +1,81 @@
+/* The chatbox container, which will be fixed to the bottom-right */
+.chatbox-container {
+    position: fixed;
+    bottom: 10px; /* Distance from bottom */
+    right: 10px; /* Distance from right */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 9999;
+  }
+  
+  /* Chatbox that is initially hidden */
+  .chatbox {
+    display: none;
+    width: 300px;
+    max-height: 400px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  /* Style for the Toggle Button */
+  .chat-toggle-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Chat messages styling */
+  .chat-messages {
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .message.user {
+    background-color: #d1e7fd;
+    align-self: flex-end;
+  }
+  
+  .message.bot {
+    background-color: #f8d7da;
+  }
+  
+  /* Input field styling */
+  .input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-container button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input-container button:hover {
+    background-color: #0056b3;
+  }
+  
